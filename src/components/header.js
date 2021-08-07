@@ -7,7 +7,7 @@ const Header = (props) => (
   <StyledHeader>
     <h1>
       <Link to="/">
-        Sihui Shen
+        Mingyu Hong
       </Link>
     </h1>
     <nav>
