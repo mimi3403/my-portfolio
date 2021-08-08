@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "my-portfolio",
+    title: "Mingyu | Software Engineer",
+    author: "Mingyu Hong",
+    description: "A Personal Website For Mingyu Hong",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
     {
