@@ -11,8 +11,4 @@ function NavDrawer({ open, setOpen }) {
   )
 }
 
-NavDrawer.propTypes = {
-  open: bool.isRequired,
-}
-
 export default NavDrawer

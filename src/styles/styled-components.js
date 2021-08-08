@@ -36,12 +36,14 @@ export const StyledHeader = styled.header`
     
 `
 
-
 export const StyledFooter = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5rem;
+    height: 2rem;
+    p {
+      margin: 0;
+    }
 `
 
 export const StyledLayout = styled.div`
