@@ -1,0 +1,23 @@
+[
+  {
+      "title": "League of Legends",
+      "description": "This was my first project",
+      "githubLink": "https://github.com/mimi3403/League-of-Legends",
+      "deployedLink": "https://mimi3403.github.io/League-of-Legends/",
+      "image": "/images/LOL.png"
+  },
+  {
+      "title": "Baby-Registry",
+      "description": "This was my Second project using Node.js, Express.js, and MongoDB",
+      "githubLink": "https://github.com/mimi3403/Baby-Registry",
+      "deployedLink": "https://hello-harper.herokuapp.com/",
+      "image": "images/Hello-Harper.png"
+  },
+  {
+      "title": "Kelly's Nail Salon",
+      "description": "This was my Third project using React.js",
+      "githubLink": "https://github.com/mimi3403/Kelly-s-Nail-Salon-Frontend",
+      "deployedLink": "https://kelly-nail-salon.netlify.app/",
+      "image": "images/Kelly-Nail-Salon.png"
+  }
+]
