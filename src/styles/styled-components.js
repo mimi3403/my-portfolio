@@ -2,13 +2,15 @@ import styled from "styled-components"
 
 export const StyledHeader = styled.header`
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #99cc99;
     color: #fff;
     height: 3rem;
     padding: 0 1rem;
     box-shadow: 1px 1px 3px 1px #808080;
+    /* position: fixed; */
     h1 {
         margin: 0;
     }
@@ -38,14 +40,44 @@ export const StyledHeader = styled.header`
 
 export const StyledFooter = styled.footer`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 2rem;
     p {
       margin: 0;
     }
+    small {
+      text-align:center;
+    }
 `
-
+export const StyledAboutInfo = styled.div`
+    .info-container {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .profile-img {
+      width: 50%
+    }
+    img {
+      display: block;
+      margin: auto;
+      border-radius: 50%; 
+      width: 300px;
+      height: 300px;
+    }
+    .info-content {
+      width: 50%;
+    }
+    p {
+      margin: auto;
+      padding: 20px;
+    }
+`
 export const StyledLayout = styled.div`
     display: flex;
     margin: 0;
@@ -131,5 +163,33 @@ export const StyledBurger = styled.button`
     :nth-child(3) {
       transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
+  }
+`
+export const StyledProjectInfo = styled.div`
+  section {
+    display: flex; 
+    align-items:center; 
+    justify-content: space-evenly;
+  }
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+  img {
+    height: 175px;
+    width: 350px;
+    border: 2px solid #333;
+  }
+  a {
+  text-decoration: none; 
+  font-size: 24px;
+  color: #333;
+}
+  a:hover {
+    color: #b2d8b2;
   }
 `

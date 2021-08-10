@@ -33,7 +33,7 @@ const Header = (props) => {
   return (
     <StyledHeader>
       <h1>
-        <Link to='/'>Mingyu Hong</Link>
+        {/* <Link to='/'>Mingyu Hong</Link> */}
       </h1>
 
       {!isSmallScreen ? (
