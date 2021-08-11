@@ -9,15 +9,15 @@ const Contact = () => {
         <input type="hidden" name="form-name" value="contact" />
         <label>
           Name
-          <input type="text" placeholder="Johnny Appleseed" />
+          <input type="text" name="name" placeholder="Johnny Appleseed" />
         </label>
         <label>
           Email
-          <input type="email" placeholder="johnny@apple.com" />
+          <input type="email" name="email" placeholder="johnny@apple.com" />
         </label>
         <label>
           Message
-          <textarea placeholder="Hey What's up?">
+          <textarea name="message" placeholder="Hey What's up?">
 
           </textarea>
         </label>
