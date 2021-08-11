@@ -40,39 +40,59 @@ const Contact = () => {
     <Layout>
       <Head page="Contact" />
       <h1>Contact</h1>
-      <form name="contact" data-netlify="true" onSubmit={handleSubmit}>
-        <input type="hidden" name="form-name" value="contact" />
-        <label>
-          Name
-          <input
-            type="text"
-            name="name"
-            placeholder="Johnny Appleseed"
-            onChange={handleChange}
-            value={formState.name}
-          />
-        </label>
-        <label>
-          Email
-          <input
-            type="email"
-            name="email"
-            placeholder="johnny@apple.com"
-            onChange={handleChange}
-            value={formState.email}
-          />
-        </label>
-        <label>
-          Message
-          <textarea
-            name="message"
-            placeholder="Hey what's up?"
-            onChange={handleChange}
-            value={formState.message}
-          ></textarea>
-        </label>
-        <input type="submit" value="Contact Me" />
-      </form>
+      <section>
+        <form
+          name="contact"
+          data-netlify="true"
+          onSubmit={handleSubmit}
+          style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "10px", }}>
+          <input type="hidden" name="form-name" value="contact" />
+          <label style={{ margin: "10px" }}>
+            Name:
+            <input
+              style={{ marginLeft: "10px", }}
+              type="text"
+              name="name"
+              placeholder="Johnny Appleseed"
+              onChange={handleChange}
+              value={formState.name}
+            />
+          </label>
+          <label style={{ margin: "10px", }}>
+            Email:
+            <input
+              style={{ marginLeft: "10px", }}
+              type="email"
+              name="email"
+              placeholder="johnny@apple.com"
+              onChange={handleChange}
+              value={formState.email}
+            />
+          </label>
+          <label style={{ margin: "10px" }}>
+            Message:
+            <textarea
+              style={{ marginLeft: "10px", }}
+              name="message"
+              rows="6"
+              cols="25"
+              placeholder="Hey what's up?"
+              onChange={handleChange}
+              value={formState.message}
+            ></textarea>
+          </label>
+          <input style={{
+            width: "10%", cursor: "pointer",
+            backgroundColor: "#f9f4dd",
+            color: "#333",
+            border: "none",
+            borderRadius: "3px",
+            margin: "15px",
+            marginRight: "15px",
+            padding: "5px 20px",
+          }} type="submit" value="Contact Me" />
+        </form>
+      </section>
     </Layout>
   )
 }

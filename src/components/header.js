@@ -9,7 +9,6 @@ import NavDrawer from './navDrawer';
 const Header = (props) => {
   const [open, setOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(true);
-  console.log(isSmallScreen);
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 1065px)');
 
