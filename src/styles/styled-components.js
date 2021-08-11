@@ -92,7 +92,7 @@ export const StyledNavDrawer = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #333;
+  background: #99cc99;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
