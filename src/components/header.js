@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 
 import { StyledHeader } from '../styles/styled-components';
 
-import Burger from './Burger';
-import NavDrawer from './NavDrawer';
+import Burger from './burger';
+import NavDrawer from './navDrawer';
 
 const Header = (props) => {
   const [open, setOpen] = useState(false);
