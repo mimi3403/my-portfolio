@@ -11,7 +11,7 @@ import "../styles/reset.css"
 import { StyledLayout } from "../styles/styled-components"
 
 const Layout = (props) => {
-  const { site: { siteMetadata: { author, title, description } } } = useStaticQuery(graphql`
+  const { site: { siteMetadata: { author, title, } } } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {

@@ -9,7 +9,7 @@ const AboutInfo = (props) => {
       <h3 style={{ textAlign: "center", marginTop: "40px" }}>About Me</h3>
       <div className="info-container">
         <div className="profile-img">
-          <img src="/images/profile.jpg" alt="profile-image" />
+          <img src="/images/profile.jpg" alt="profile" />
         </div>
         <div className="info-content">
           <p>
