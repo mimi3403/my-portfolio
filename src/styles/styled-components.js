@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: #99cc99;
+    background-color: #ccb0b9;
     color: #fff;
     height: 3rem;
     padding: 0 1rem;
@@ -92,7 +92,7 @@ export const StyledNavDrawer = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #99cc99;
+  background: #ccb0b9;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
@@ -182,14 +182,53 @@ export const StyledProjectInfo = styled.div`
   img {
     height: 175px;
     width: 350px;
-    border: 2px solid #333;
+    border: 2px solid #dbc7cd;
   }
   a {
   text-decoration: none; 
-  font-size: 24px;
+  font-size: 22px;
   color: #333;
 }
   a:hover {
-    color: #b2d8b2;
+    color: #b397a0;
+  }
+`
+
+export const StyledProjectDetails = styled.div`
+  section {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    font-size: 16px;
+    @media (max-width: 576px) {
+    grid-template-columns: repeat(1, 1fr)
+    }
+  }
+  .container {
+    border: 2px solid #dbc7cd;
+    margin: 10px;
+  }
+
+  .project-info {
+    text-align: justify;
+    margin: 10px;
+    
+  }
+  img {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    height: 250px;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
   }
 `
