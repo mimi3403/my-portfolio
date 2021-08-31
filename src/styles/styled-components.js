@@ -69,14 +69,23 @@ export const StyledAboutInfo = styled.div`
       border-radius: 50%; 
       width: 300px;
       height: 300px;
+      @media (max-width: 576px) {
+        width: 300px;
+        height: 200px;
+      }
     }
     .info-content {
       width: 50%;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
     }
     p {
       margin: auto;
       padding: 20px;
+      text-align: justify;
     }
+
 `
 export const StyledLayout = styled.div`
     display: flex;

@@ -8,7 +8,7 @@ const About = (props) => (
   <Layout>
     <Head page="About" />
     <AboutInfo />
-    <ProjectInfo />
+    {/* <ProjectInfo /> */}
   </Layout>
 )
 
