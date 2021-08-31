@@ -98,6 +98,7 @@ export const StyledLayout = styled.div`
     margin: 0;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 1550px;
     & > div {
         flex-grow: 1;
     }
