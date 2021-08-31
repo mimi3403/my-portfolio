@@ -50,6 +50,9 @@ export const StyledFooter = styled.footer`
     small {
       text-align:center;
     }
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
 `
 export const StyledAboutInfo = styled.div`
     .info-container {
@@ -84,6 +87,9 @@ export const StyledAboutInfo = styled.div`
       margin: auto;
       padding: 20px;
       text-align: justify;
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
     }
 
 `
@@ -187,6 +193,9 @@ export const StyledProjectInfo = styled.div`
     flex-direction: column;
     margin-top: 20px; 
     margin-bottom: 20px;
+    @media (max-width: 576px) {
+      margin-right: 10px;
+    }
   }
   img {
     height: 175px;
@@ -197,10 +206,13 @@ export const StyledProjectInfo = styled.div`
   text-decoration: none; 
   font-size: 22px;
   color: #333;
-}
-  a:hover {
-    color: #b397a0;
+  @media (max-width: 576px) {
+    font-size: 13px;
   }
+}
+a:hover {
+  color: #b397a0;
+}
 `
 
 export const StyledProjectDetails = styled.div`
